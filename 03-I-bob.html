@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>I bob – Sukunat suroni</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+
+  <style>
+    .top-toc-link {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      font-size: 24px;
+      text-decoration: none;
+    }
+    .bookmark-button {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+    .bookmark-button button {
+      font-size: 20px;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body class="book-page">
+
+  <!-- 📚 Mundarijaga qaytish belgisi -->
+  <a href="53-mundarija.html" class="top-toc-link" title="Mundarijaga qaytish">📚</a>
+
+  <!-- 📌 Belgilash tugmasi -->
+  <div class="bookmark-button">
+    <button onclick="saveBookmark()">📌</button>
+  </div>
+
+  <!-- Sahifa mazmuni -->
+  <div class="page-content">
+    <h2>I bob</h2>
+    <h3 style="text-align: center; margin-top: -10px;">"SUKUNAT SURONI"</h3>
+
+    <img src="img/I-bob.jpg" alt="Sukunat suroni" style="width: 100%; max-width: 500px; margin: 30px auto; display: block; border-radius: 8px; box-shadow: 0 0 8px rgba(0,0,0,0.1);">
+
+    <div style="text-align: center; margin-top: 40px;">
+      <a href="02-epigraf.html" class="prev-btn">Oldingi sahifa</a>
+      <a href="04-beparvoman.html" class="next-btn">Keyingi sahifa</a>
+    </div>
+  </div>
+
+</body>
+</html>

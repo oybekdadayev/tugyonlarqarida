@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Izoh</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .feedback-section {
+      margin-top: 40px;
+    }
+
+    .feedback-section textarea {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    .star-rating {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+      margin: 20px 0;
+    }
+
+    .star-rating input {
+      display: none;
+    }
+
+    .star-rating label {
+      font-size: 32px;
+      color: #ccc;
+      cursor: pointer;
+      transition: color 0.2s ease-in-out;
+    }
+
+    .star-rating input:checked ~ label,
+    .star-rating label:hover,
+    .star-rating label:hover ~ label {
+      color: gold;
+    }
+
+    .submit-btn {
+      background-color: #8b4513;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .submit-btn:hover {
+      background-color: #a0522d;
+    }
+  </style>
+</head>
+<body class="book-page">
+  <div class="page-content">
+    <h2>Izoh</h2>
+
+    <p class="poem-text">
+      “Tug‘yonlar qarida” — bu oddiy satrlar to‘plami emas. Har bir she’r — bu yurakdagi nolalar, har bir so‘z — bu muallifning yashagan og‘riqlari va topgan haqiqatlaridir. <br><br>
+      Kitobning umumiy tuzilmasi 6 bobdan iborat bo‘lib, har biri turli kayfiyat, hayotiy bosqich yoki tematik yo‘nalishga bag‘ishlangan. Ushbu she’rlar bilan har bir o‘quvchi o‘zini topadi, hayotning bir parchasini tan oladi va — tasalli topadi.
+    </p>
+
+    <!-- Izoh va baholash -->
+    <div class="feedback-section">
+      <h3>Kitob haqida fikringizni yozing:</h3>
+      <textarea placeholder="Bu yerga fikrlaringizni yozing..."></textarea>
+
+      <h3 style="margin-top: 20px;">Baholash (yulduzcha):</h3>
+      <div class="star-rating">
+        <input type="radio" name="rating" id="star5" value="5">
+        <label for="star5">★</label>
+        <input type="radio" name="rating" id="star4" value="4">
+        <label for="star4">★</label>
+        <input type="radio" name="rating" id="star3" value="3">
+        <label for="star3">★</label>
+        <input type="radio" name="rating" id="star2" value="2">
+        <label for="star2">★</label>
+        <input type="radio" name="rating" id="star1" value="1">
+        <label for="star1">★</label>
+      </div>
+
+      <button class="submit-btn">Yuborish</button>
+       <div style="text-align: center; margin-top: 40px;">
+      <a href="51-muallif.html" class="prev-btn">Oldingi sahifa</a>
+      <a href="53-mundarija.html" class="next-btn">Keyingi sahifa</a>
+    </div>
+  </div>
+</body>
+</html>

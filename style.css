@@ -1,0 +1,215 @@
+/* Umumiy sozlamalar */
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  background-color: #f5ecd8;
+  color: #2b2b2b;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* Muqova sahifasi */
+.cover-page {
+  text-align: center;
+  background-color: #000;
+  padding: 20px;
+}
+
+.cover-img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 12px;
+}
+
+.start-btn,
+.next-btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 24px;
+  font-size: 18px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #8b4513;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.start-btn:hover,
+.next-btn:hover {
+  background-color: #a0522d;
+}
+
+/* She’r sahifasi */
+.book-page {
+  background-color: #fdf6e3;
+  padding: 60px 20px;
+  min-height: 100vh;
+}
+
+.page-content {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  background-color: #fdf6e3;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  position: relative;
+  z-index: 1;
+}
+
+.page-content h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #2b2b2b;
+}
+
+.book-title {
+  text-align: center;
+  font-size: 32px;
+  color: #444;
+}
+
+.epigraph {
+  margin-top: 40px;
+  text-align: center;
+  font-style: italic;
+}
+
+.author {
+  margin-top: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* She’r matni */
+.poem-text {
+  display: block;
+  width: fit-content;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+  font-size: 18px;
+  line-height: 1.4;
+  white-space: pre-line;
+}
+
+/* Reaksiya tugmalari */
+.reactions {
+  text-align: center;
+  margin-top: 30px;
+  position: relative;
+  z-index: 10;
+}
+
+.react-btn {
+  font-size: 24px;
+  margin: 0 10px;
+  padding: 8px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+  opacity: 0.5;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.react-btn:hover {
+  transform: scale(1.2);
+}
+
+.react-btn.active {
+  opacity: 1;
+}
+
+.react-btn .count {
+  font-size: 14px;
+  margin-left: 4px;
+  color: #444;
+}
+
+/* Mundarija tugmasi */
+.top-toc-link {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  font-size: 28px;
+  text-decoration: none;
+  color: #8b4513;
+  background-color: #fdf6e3;
+  padding: 6px 12px;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  z-index: 999;
+}
+
+.top-toc-link:hover {
+  background-color: #f0e0c0;
+  transform: scale(1.1);
+}
+
+/* Bookmark tugmasi */
+.bookmark-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+.bookmark-button button {
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.bookmark-button button:hover {
+  opacity: 1;
+}
+.nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.prev-btn,
+.next-btn {
+  padding: 12px 24px;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 6px;
+  background-color: #8b4513;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+  background-color: #a0522d;
+}
+.prev-btn,
+.next-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 18px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #8b4513;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+  background-color: #a0522d;
+}
